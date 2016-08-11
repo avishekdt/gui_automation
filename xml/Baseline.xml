@@ -1,0 +1,148 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Baseline">
+
+
+<test name="bl_add_bl_page_verify">
+    <classes>
+        <class name="gui.tests.Baseline.bl_add_bl_page_verify" ></class>  
+    </classes>
+</test>
+
+<test name="bl_add_delete_activity">
+    <classes>
+        <class name="gui.tests.Baseline.bl_add_delete_activity" ></class>  
+    </classes>
+</test>
+
+<test name="bl_add_from_action_menu">
+    <classes>
+        <class name="gui.tests.Baseline.bl_add_from_action_menu" ></class>  
+    </classes>
+</test>
+
+<test name="bl_add_multi_bl">
+    <classes>
+        <class name="gui.tests.Baseline.bl_add_multi_bl" ></class>  
+    </classes>
+</test>
+
+<test name="bl_add_unc_path_deploy_node">
+    <classes>
+        <class name="gui.tests.Baseline.bl_add_unc_path_deploy_node" ></class>  
+    </classes>
+</test>
+
+<test name="bl_adv_filter_func_in_create_cbl">
+    <classes>
+        <class name="gui.tests.Baseline.bl_adv_filter_func_in_create_cbl" ></class>  
+    </classes>
+</test>
+
+<test name="bl_cbl_page_checkbox_filter_func">
+    <classes>
+        <class name="gui.tests.Baseline.bl_cbl_page_checkbox_filter_func" ></class>  
+    </classes>
+</test>
+
+<test name="bl_cbl_page_reset_button">
+    <classes>
+        <class name="gui.tests.Baseline.bl_cbl_page_reset_button" ></class>  
+    </classes>
+</test>
+
+<test name="bl_cbl_save_baseline_button">
+    <classes>
+        <class name="gui.tests.Baseline.bl_cbl_save_baseline_button" ></class>  
+    </classes>
+</test>
+
+<test name="bl_create_cbl_page_verify">
+    <classes>
+        <class name="gui.tests.Baseline.bl_create_cbl_page_verify" ></class>  
+    </classes>
+</test>
+
+<test name="bl_delete_bl_reduce_filter_count">
+    <classes>
+        <class name="gui.tests.Baseline.bl_delete_bl_reduce_filter_count" ></class>  
+    </classes>
+</test>
+
+<test name="bl_report_page_func">
+    <classes>
+        <class name="gui.tests.Baseline.bl_report_page_func" ></class>  
+    </classes>
+</test>
+
+<test name="bl_delete_page_func">
+    <classes>
+        <class name="gui.tests.Baseline.bl_delete_page_func" ></class>  
+    </classes>
+</test>
+
+<test name="bl_shouldbe_delete_In_Installdone_state_localHost">
+    <classes>
+        <class name="gui.tests.Baseline.bl_shouldbe_delete_In_Installdone_state_localHost" ></class>  
+    </classes>
+</test>
+
+<test name="bl_shouldbe_delete_In_Installdone_state">
+    <classes>
+        <class name="gui.tests.Baseline.bl_shouldbe_delete_In_Installdone_state" ></class>  
+    </classes>
+</test>
+
+<test name="bl_shouldnot_delete_In_Deploy_Phase">
+    <classes>
+        <class name="gui.tests.Baseline.bl_shouldnot_delete_In_Deploy_Phase" ></class>  
+    </classes>
+</test>
+
+<test name="bl_shouldnot_delete_In_Inventory_Phase">
+    <classes>
+        <class name="gui.tests.Baseline.bl_shouldnot_delete_In_Inventory_Phase" ></class>
+    </classes>
+</test>
+
+<test name="bl_shouldbe_delete_In_Update_Required_state">
+    <classes>
+        <class name="gui.tests.Baseline.bl_shouldbe_delete_In_Update_Required_state" ></class>
+    </classes>
+</test>
+<test name="bl_unc_processing_abl_hpsum_standalone">
+    <classes>
+        <class name="gui.tests.Baseline.bl_unc_processing_abl_hpsum_standalone" ></class>
+    </classes>
+</test>
+<test name="bl_unc_processing_cbl_hpsum_standalone">
+    <classes>
+        <class name="gui.tests.Baseline.bl_unc_processing_cbl_hpsum_standalone" ></class>
+    </classes>
+</test>
+<test name="bl_unc_processing_cbl_hpsum_in_spp">
+    <classes>
+        <class name="gui.tests.Baseline.bl_unc_processing_cbl_hpsum_in_spp" ></class>
+    </classes>
+</test>
+<test name="bl_unc_processing_spp_hpsum_in_spp">
+    <classes>
+        <class name="gui.tests.Baseline.bl_unc_processing_spp_hpsum_in_spp" ></class>
+    </classes>
+</test>
+<test name="bl_local_abl_processing_hpsum_standalone">
+    <classes>
+        <class name="gui.tests.Baseline.bl_local_abl_processing_hpsum_standalone" ></class>
+    </classes>
+</test>
+<test name="bl_local_cbl_processing_hpsum_standalone">
+    <classes>
+        <class name="gui.tests.Baseline.bl_local_cbl_processing_hpsum_standalone" ></class>
+    </classes>
+</test>
+<test name="bl_shouldbe_delete_In_Idle_state">
+    <classes>
+        <class name="gui.tests.Baseline.bl_shouldbe_delete_In_Idle_state" ></class>
+    </classes>
+</test>
+
+</suite>

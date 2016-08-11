@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Switch">
+
+
+<test name="Switch Deploy">
+    <classes>
+        <class name="gui.tests.Switch.switch_fc_deploy_asso_fabric_switches" ></class>  
+    </classes>
+</test>
+
+<test name="Switch normal validation">
+    <classes>
+        <class name="gui.tests.Switch.switch_fc_normal_validation" ></class>  
+    </classes>
+</test>
+
+<test name="Switch special action">
+    <classes>
+        <class name="gui.tests.Switch.switch_fc_special_actions" ></class>  
+    </classes>
+</test>
+
+<test name="Switch window linux group deploy">
+    <classes>
+        <class name="gui.tests.Switch.switch_fc_win_lin_grp_deploy" ></class>  
+    </classes>
+</test>
+
+
+</suite>

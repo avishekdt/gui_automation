@@ -1,0 +1,15 @@
+[0710/100607:INFO:chromedriver_server.cc(76)] Handling request: /status 
+[0710/100607:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":{"build":{"version":"alpha"},"os":{"arch":"x86","name":"Windows NT","version":"6.0 SP2"}}}
+[0710/100607:INFO:chromedriver_server.cc(76)] Handling request: /session {"desiredCapabilities":{"platform":"ANY","browserName":"chrome","chromeOptions":{"args":[],"extensions":[]},"version":"","chrome.switches":[]}}
+[0710/100607:INFO:chrome_launcher.cc(74)] Using chrome from C:\Users\sinajayk\AppData\Local\Google\Chrome\Application\chrome.exe
+[0710/100617:INFO:chromedriver_server.cc(81)] Done handling request: 303 
+[0710/100617:INFO:chromedriver_server.cc(76)] Handling request: /session/3b5501328b4adc0a79c45ceb55788f37 
+[0710/100617:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"3b5501328b4adc0a79c45ceb55788f37","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","cssSelectorsEnabled":true,"databaseEnabled":true,"driverVersion":"0.8","handlesAlerts":true,"javascriptEnabled":true,"locationContextEnabled":true,"nativeEvents":true,"platform":"Windows NT","rotatable":false,"takesScreenshot":true,"version":"27.0.1453.116","webStorageEnabled":true}}
+[0710/100617:INFO:chromedriver_server.cc(76)] Handling request: /session/3b5501328b4adc0a79c45ceb55788f37/timeouts/implicit_wait {"ms":20000}
+[0710/100617:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"3b5501328b4adc0a79c45ceb55788f37","status":0,"value":null}
+[0710/100617:INFO:chromedriver_server.cc(76)] Handling request: /session/3b5501328b4adc0a79c45ceb55788f37/timeouts {"ms":60000,"type":"page load"}
+[0710/100617:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"3b5501328b4adc0a79c45ceb55788f37","status":0,"value":null}
+[0710/100617:INFO:chromedriver_server.cc(76)] Handling request: /session/3b5501328b4adc0a79c45ceb55788f37/timeouts/async_script {"ms":60000}
+[0710/100617:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"3b5501328b4adc0a79c45ceb55788f37","status":0,"value":null}
+[0710/100617:INFO:chromedriver_server.cc(76)] Handling request: /session/3b5501328b4adc0a79c45ceb55788f37/window/current/maximize {"windowHandle":"current"}
+[0710/100620:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"3b5501328b4adc0a79c45ceb55788f37","status":0,"value":null}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/dom4j-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/jsch-0.1.51.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/log4j-1.2.13.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/mail.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/poi-3.9-20121203.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/saxon-8.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/SaxonLiaison.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/testng.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/testng-xslt-maven-plugin-test-0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/xmlbeans-2.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/automation/common/jars/jcifs-1.3.17.jar"/>
+	<classpathentry kind="lib" path="C:/automation/common/jars/selenium-server-standalone-2.52.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

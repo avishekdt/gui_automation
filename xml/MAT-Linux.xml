@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MAT">
+
+<test name="Remote Deploy Linux">
+    <classes>
+        <class name="gui.tests.MAT.RemoteDeployToLin" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy VMware">
+    <classes>
+        <class name="gui.tests.MAT.RemoteDeployToVm" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy Windows">
+    <classes>
+        <class name="gui.tests.MAT.RemoteDeployToWin" ></class>  
+    </classes>
+</test>
+
+<test name="Guided Update Interactive">
+    <classes>
+        <class name="gui.tests.MAT.GU_Interactive" ></class>  
+    </classes>
+</test>
+
+<test name="Local Deploy">
+    <classes>
+        <class name="gui.tests.MAT.LocalDeploy" ></class>  
+    </classes>
+</test>
+
+</suite>

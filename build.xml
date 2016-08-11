@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE project []>
+
+<project name="HPSUM GUI" default="usage" basedir=".">  
+
+<!-- ========== Initialize Properties =================================== -->
+    <property environment="env"/>    
+    <property name="home.dir" value="${basedir}"/>
+	<property name="jars.dir" value="../common/jars"/>
+	<!-- <property name="jars.dir" value="/root/Desktop/automation/common/jars"/> -->
+    <property name="src.dir" value="${home.dir}/src"/>
+	<property name="build.dir" value="${home.dir}/build"/>
+	<property name="testclasses.dir" value="${build.dir}/classes"/>
+	<property name="testjars.dir" value="${build.dir}/jars"/>
+	<property name="ng.result" value="test-output"/>
+	<property name="time.stamp" value="${env.TIME_STAMP}"/> 
+    
+    <!--target name="start-selenium-server">
+        <java jar="${home.dir}/lib/selenium-server.jar"/>
+    </target-->
+
+    <target name="setClassPath" unless="test.classpath">
+        <path id="classpath_jars">
+            <fileset dir="${jars.dir}" includes="*.jar"/>
+        </path>
+        <pathconvert pathsep=";" 
+            property="test.classpath" 
+            refid="classpath_jars"/>
+    </target>
+
+    <target name="init" depends="setClassPath">
+        <tstamp>
+            <format property="start.time" pattern="MM/dd/yyyy hh:mm aa" />
+        </tstamp>
+        <condition property="ANT" 
+            value="${env.ANT_HOME}/bin/ant.bat" 
+            else="${env.ANT_HOME}/bin/ant">
+                    <os family="windows" />
+        </condition>
+        <taskdef name="testng" classpath="${test.classpath}"
+               classname="org.testng.TestNGAntTask" />
+    
+    </target>
+
+    <!-- all -->
+    <target name="all">
+    </target>
+
+    <!-- clean -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <!-- compile -->
+    <target name="compile" depends="init, clean" > 
+		<delete includeemptydirs="true" quiet="true">
+            <fileset dir="${build.dir}" includes="**/*"/>
+		</delete>
+        <echo message="making directory..."/>
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${testclasses.dir}"/>
+		<mkdir dir="${testjars.dir}"/>
+        <echo message="classpath------: ${test.classpath}"/>
+        <echo message="compiling..."/>
+        <javac 
+            debug="true" 
+            destdir="${build.dir}" 
+            srcdir="${src.dir}" 
+            target="1.7" 
+            classpath="${test.classpath}"
+        >
+        </javac>
+    </target>
+
+    <!-- build -->
+    <target name="build" depends="init">
+    </target>
+
+    <!-- run -->
+    <target name="run" depends="compile">
+        <testng classpath="${test.classpath}:${build.dir}" suitename="suite1">	
+            <xmlfileset dir="${home.dir}/xml" includes="testng.xml"/>
+        </testng>
+        <!--
+        <testng classpath="${test.classpath}:${build.dir}" groups="fast">
+            <classfileset dir="${build.dir}" includes="example1/*.class"/>
+        </testng>
+        -->
+    </target>
+	
+	
+	
+
+    <target name="usage">
+        <echo>
+            ant run will execute the test
+        </echo>
+    </target>
+	
+
+	<path id="test.c">	
+	        <fileset dir="${jars.dir}" includes="*.jar"/>
+
+	</path>
+	
+
+	
+	<target name="email" >
+	       <java classname="gui.common.util.SendMail" classpath="${build.dir}" classpathref="test.c" />
+    </target>
+	
+	<target name="makexsltreports" depends="run">
+		<mkdir dir="${home.dir}/XSLT_Reports/output"/>
+
+	        <xslt in="${ng.result}/testng-results.xml" style="src/gui/common/util/testng-results.xsl"
+	              out="${home.dir}/XSLT_Reports/output/index.html" classpathref="test.c" processor="SaxonLiaison">
+	            <param name="testNgXslt.outputDir" expression="${home.dir}/XSLT_Reports/output/"/>
+	            <param name="testNgXslt.showRuntimeTotals" expression="true"/>
+	        </xslt>
+	</target>
+	
+	<target name="checkos">
+		<condition property="Windows" value="true">
+            <os family="windows" />
+		</condition>
+
+		<condition property="Linux" value="true">
+            <os family="unix" />
+		</condition>
+	</target>
+
+	<target name="copy_windows" if="Windows" depends="checkos">
+		<exec dir="." executable="cmd.exe" >
+	          <arg line="/c"/>
+				<arg line="Robocopy.exe"/>
+				<arg line=".\logs\ \\15.154.112.188\HPSUM_Logs\Automation-Logs\GUI-Automation\${time.stamp}\"/>
+				<arg line="*"/>
+				<arg line="/E"/>
+	    </exec>
+	</target>
+	
+	<target name="copy_linux" if="Linux" depends="checkos">
+			<exec dir="." executable="/bin/cp" >
+	        <arg line="-r"/>
+			<arg line=""/>
+			<arg line=""/>
+			<arg line=""/>
+			<arg line=""/>
+			<arg line=""/>
+	    </exec>
+	</target>
+	
+	
+	<target name="sendMail" depends="makexsltreports">
+		<concat append="true" destfile="GUI-Automation.html">&lt;/table&gt;</concat>
+		<loadfile property="html_text" srcFile="GUI-Automation.html"/>
+		
+	 	<zip destfile="${basedir}/XSLT_Results.zip" basedir="${home.dir}/XSLT_Reports/output"/>
+		
+		<antcall target="copy_linux" />
+		<antcall target="copy_windows" />
+		<echo message="Value of time.stamp in ant=${time.stamp}"/>
+		<mail mailhost="smtp1.hpe.com" mailport="25" subject="GUI-Automation Run Report from:${os.name}">
+			<from address="avishek.datta@hpe.com"/>
+			<to address="avishek.datta@hpe.com"/>
+			<message mimetype="text/html">
+			Hi All, 
+			&lt;br&gt;
+			Below is the GUI-Automation execution report:&lt;br&gt;&lt;br&gt;
+			
+			${html_text} &lt;br&gt;
+			
+			&lt;br&gt;
+			The logs are copied to: \\15.154.112.188\HPSUM_Logs\Automation-Logs\GUI-Automation\${time.stamp}
+			&lt;br&gt;
+			Credentials: hpdvt-user/Welcome123!
+			&lt;br&gt;
+			&lt;br&gt;
+			Thanks,&lt;br&gt;
+			HPSUM-QA
+			
+			</message>
+		</mail>
+
+	</target>
+		
+	
+
+	
+
+    <!-- ****************** targets not used ****************** -->
+ 
+</project>

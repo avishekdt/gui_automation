@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WAT">
+
+
+<test name="WAT Test 1">
+    <classes>
+        <class name="gui.tests.WAT.Testcase_wat1" ></class>  
+    </classes>
+</test>
+
+<test name="WAT Test 2">
+    <classes>
+        <class name="gui.tests.WAT.Testcase_wat2" ></class>  
+    </classes>
+</test>
+
+
+
+</suite>

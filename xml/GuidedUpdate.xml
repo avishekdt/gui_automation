@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GuidedUpdate">
+<test name="gu_select_from_multiple_bl">
+    <classes>
+        <class name="gui.tests.GuidedUpdate.gu_select_from_multiple_bl" ></class>  
+    </classes>
+</test> 
+<test name="gu_inventory_startover">
+    <classes>
+        <class name="gui.tests.GuidedUpdate.gu_inventory_startover" ></class>  
+    </classes>
+</test> 
+<test name="gu_inventory_abort_then_startover">
+    <classes>
+        <class name="gui.tests.GuidedUpdate.gu_inventory_abort_then_startover" ></class>  
+    </classes>
+</test> 
+ <test name="gu_review_page_back_button">
+    <classes>
+        <class name="gui.tests.GuidedUpdate.gu_review_page_back_button" ></class>  
+    </classes>
+</test> 
+<test name="gu_adv_option_func">
+    <classes>
+        <class name="gui.tests.GuidedUpdate.gu_adv_option_func" ></class>  
+    </classes>
+</test> 
+<test name="gu_inventory_page_buttons_status">
+    <classes>
+        <class name="gui.tests.GuidedUpdate.gu_inventory_page_buttons_status" ></class>  
+    </classes>
+</test> 
+<test name="gu_deploy_start_over_ok">
+    <classes>
+        <class name="gui.tests.GuidedUpdate.gu_deploy_start_over_ok" ></class>  
+    </classes>
+</test>
+<test name="gu_deploy_abort">
+    <classes>
+        <class name="gui.tests.GuidedUpdate.gu_deploy_abort" ></class>  
+    </classes>
+</test>
+</suite>

@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VMHosts">
+
+<test name="vmhost_addnew_functional_check_with_wrong_credentials">
+    <classes>
+        <class name="gui.tests.VMHosts.vmhost_addnew_functional_check_with_wrong_credentials" ></class>  
+    </classes>
+</test>
+
+<test name="vmhost_deploy_and_check_activity">
+    <classes>
+        <class name="gui.tests.VMHosts.vmhost_deploy_and_check_activity" ></class>  
+    </classes>
+</test>
+
+<test name="vmhost_deploy_and_check_logs">
+    <classes>
+        <class name="gui.tests.VMHosts.vmhost_deploy_and_check_logs" ></class>  
+    </classes>
+</test>
+
+<test name="vmhost_deploy_generate_report">
+    <classes>
+        <class name="gui.tests.VMHosts.vmhost_deploy_generate_report" ></class>  
+    </classes>
+</test>
+
+</suite>

@@ -1,0 +1,83 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Enclosure_VC">
+
+ 
+<test name="enc_vc_downgrade_nodes_page">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_vc_downgrade_nodes_page" ></class>  
+    </classes>
+</test>
+
+<test name="enc_vc_upgrade_report_without_asso_nodes_nodes_page">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_vc_upgrade_report_without_asso_nodes_nodes_page" ></class>  
+    </classes>
+</test>
+
+<test name="enc_deploy_vc_from_context_screen">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_deploy_vc_from_context_screen" ></class>  
+    </classes>
+</test>
+
+<test name="enc_vc_rewrite_context_screen">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_vc_rewrite_context_screen" ></class>  
+    </classes>
+</test>
+ 
+<test name="enc_ilo_downgrade_without_asso_nodes_context_screen">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_ilo_downgrade_without_asso_nodes_context_screen" ></class>  
+    </classes>
+</test>
+
+<test name="enc_oa_downgrade_report_without_asso_nodes_nodes_page">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_oa_downgrade_report_without_asso_nodes_nodes_page" ></class>  
+    </classes>
+</test>
+
+<test name="enc_oa_upgrade_without_asso_nodes_enclosures_page">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_oa_upgrade_without_asso_nodes_enclosures_page" ></class>  
+    </classes>
+</test>
+
+<test name="enc_oa_rewrite_without_asso_nodes_enclosures_page">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_oa_rewrite_without_asso_nodes_enclosures_page" ></class>  
+    </classes>
+</test>
+
+<test name="enc_sas_deploy_without_asso_nodes">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_sas_deploy_without_asso_nodes" ></class>  
+    </classes>
+</test>
+
+<test name="enc_vc_add_secondary_vc_error">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_vc_add_secondary_vc_error" ></class>  
+    </classes>
+</test>
+
+<test name="enc_vc_add_with_diff_oa_cred">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_vc_add_with_diff_oa_cred" ></class>  
+    </classes>
+</test>
+
+<test name="enc_vc_add_with_wrong_oa_cred_context_screen">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_vc_add_with_wrong_oa_cred_context_screen" ></class>  
+    </classes>
+</test>
+
+<test name="enc_vc_add_with_wrong_oa_cred">
+    <classes>
+        <class name="gui.tests.Enclosure_VC.enc_vc_add_with_wrong_oa_cred" ></class>  
+    </classes>
+</test>
+
+</suite>

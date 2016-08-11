@@ -1,0 +1,76 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LoginAndLogout">
+
+<test name="login_enabling_login_button">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.login_enabling_login_button" ></class>  
+    </classes>
+</test>
+
+<test name="login_invalid_credentials">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.login_invalid_credentials" ></class>  
+    </classes>
+</test>
+
+<test name="login_password_hidden_merged_delete">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.login_password_hidden_merged_delete" ></class>  
+    </classes>
+</test>
+
+<test name="loginScreensuccess_SessionInfo_logoutCancel_merged">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.loginScreensuccess_SessionInfo_logoutCancel_merged" ></class>  
+    </classes>
+</test>
+
+<test name="LogoutDeaultOptionBehavior_LogoutShutdownOptionAvailable_merged">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.LogoutDeaultOptionBehavior_LogoutShutdownOptionAvailable_merged" ></class>  
+    </classes>
+</test>
+
+<test name="logout_person_icon">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.logout_person_icon" ></class>  
+    </classes>
+</test>
+
+<test name="logout_screen_shudown_button_enable">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.logout_screen_shudown_button_enable" ></class>  
+    </classes>
+</test>
+
+<test name="logout_screen_shutdown_cancel">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.logout_screen_shutdown_cancel" ></class>  
+    </classes>
+</test>
+
+<test name="logout_screen_shutdown_successful">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.logout_screen_shutdown_successful" ></class>  
+    </classes>
+</test>
+
+<test name="login_account_lock_on_maximum_trail_NOT_IMPLEMENTED">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.login_account_lock_on_maximum_trail_NOT_IMPLEMENTED" ></class>  
+    </classes>
+</test>
+
+<test name="logout_screen_login_remote_shutdown">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.logout_screen_login_remote_shutdown" ></class>  
+    </classes>
+</test>
+
+<test name="logout_screen_remote_shutdown">
+    <classes>
+        <class name="gui.tests.LoginAndLogout.logout_screen_remote_shutdown" ></class>  
+    </classes>
+</test>
+
+</suite>

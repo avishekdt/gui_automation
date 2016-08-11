@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="template_suite">
+
+
+<test name="TEMPLATE TEST 1 SMALL NAME">
+    <classes>
+        <class name="gui.tests.template_suite.template_test_1" ></class>  
+    </classes>
+</test>
+
+<test name="TEMPLATE TEST 2 SMALL NAME">
+    <classes>
+        <class name="gui.tests.template_suite.template_test_2" ></class>  
+    </classes>
+</test>
+
+
+
+<test name="TEMPLATE TEST n SMALL NAME">
+    <classes>
+        <class name="gui.tests.template_suite.template_test_n" ></class>  
+    </classes>
+</test>
+
+
+</suite>

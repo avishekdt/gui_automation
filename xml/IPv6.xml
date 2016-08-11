@@ -1,0 +1,88 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="IPv6">
+
+
+<test name="ipv6_add_loopback_address">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_add_loopback_address" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_add_invalid_address">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_add_invalid_address" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_unicast_remote_server_deploy">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_unicast_remote_server_deploy" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_global_remote_server_deploy">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_global_remote_server_deploy" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_ilo_deploy">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_ilo_deploy" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_global_oa_deploy">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_global_oa_deploy" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_global_vc_deploy">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_global_vc_deploy" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_unicast_oa_deploy">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_unicast_oa_deploy" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_unicast_vc_deploy">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_unicast_vc_deploy" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_unicast_dns_add_deploy">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_unicast_dns_add_deploy" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_global_dns_add_deploy">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_global_dns_add_deploy" ></class>  
+    </classes>
+</test>
+  
+<test name="ipv6_vmhost_deploy">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_vmhost_deploy" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_vmhost_lockdown_ipv6_vcenter_cred">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_vmhost_lockdown_ipv6_vcenter_cred" ></class>  
+    </classes>
+</test>
+
+<test name="ipv6_vmhost_lockdown_dns_vcenter_cred">
+    <classes>
+        <class name="gui.tests.IPv6.ipv6_vmhost_lockdown_dns_vcenter_cred" ></class>  
+    </classes>
+</test>
+</suite>

@@ -1,0 +1,92 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QualityQuotient">
+
+<test name="Remote Deploy Linux">
+    <classes>
+        <class name="gui.tests.MAT.RemoteDeployToLin" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy VMware">
+    <classes>
+        <class name="gui.tests.MAT.RemoteDeployToVm" ></class>  
+    </classes>
+</test>
+
+<test name="Guided Update Interactive">
+    <classes>
+        <class name="gui.tests.MAT.GU_Interactive" ></class>  
+    </classes>
+</test>
+
+<test name="Local Deploy">
+    <classes>
+        <class name="gui.tests.MAT.LocalDeploy" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy Windows">
+    <classes>
+        <class name="gui.tests.MAT.RemoteDeployToWin" ></class>  
+    </classes>
+</test>
+	
+<test name="Remote Deploy iLO">
+    <classes>
+        <class name="gui.tests.QualityQuotient.RemoteDeployToIlo" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy OA">
+    <classes>
+        <class name="gui.tests.QualityQuotient.RemoteDeployToOa" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy VC">
+    <classes>
+        <class name="gui.tests.QualityQuotient.RemoteDeployToVc" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy HP-UX">
+    <classes>
+        <class name="gui.tests.QualityQuotient.RemoteDeployToHpux" ></class>  
+    </classes>
+</test>
+
+<!--
+
+<test name="Remote Deploy FcSwitch">
+    <classes>
+        <class name="gui.tests.QualityQuotient.RemoteDeployToFcSwitch" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy SD2 OA">
+    <classes>
+        <class name="gui.tests.QualityQuotient.RemoteDeployToSd2Oa" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy SAS Switch">
+    <classes>
+        <class name="gui.tests.QualityQuotient.RemoteDeployToSasSwitch" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy iPDU">
+    <classes>
+        <class name="gui.tests.QualityQuotient.RemoteDeployToIpdu" ></class>  
+    </classes>
+</test>
+
+<test name="Remote Deploy Moonshot">
+    <classes>
+        <class name="gui.tests.QualityQuotient.RemoteDeployToMoonshot" ></class>  
+    </classes>
+</test>
+
+-->
+
+</suite>

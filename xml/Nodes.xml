@@ -1,0 +1,87 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Nodes">
+
+<test name="node_check_status_no_app_comp">
+    <classes>
+        <class name="gui.tests.Nodes.node_check_status_no_app_comp" ></class>  
+    </classes>
+</test>
+
+<test name="node_add_comma_separated_list">
+    <classes>
+        <class name="gui.tests.Nodes.node_add_comma_separated_list" ></class>  
+    </classes>
+</test>
+
+<test name="node_add_range">
+    <classes>
+        <class name="gui.tests.Nodes.node_add_range" ></class>  
+    </classes>
+</test>
+
+<test name="node_add_range_plus_comma_separated_list">
+    <classes>
+        <class name="gui.tests.Nodes.node_add_range_plus_comma_separated_list"></class>  
+    </classes>
+</test>
+
+<test name="node_add_select_unselect_baselines_ap">
+    <classes>
+        <class name="gui.tests.Nodes.node_add_select_unselect_baselines_ap" ></class>  
+    </classes>
+</test>
+
+<test name="node_add_startover">
+    <classes>
+        <class name="gui.tests.Nodes.node_add_startover" ></class>  
+    </classes>
+</test>
+
+<test name="node_add_use_current_cred_win">
+    <classes>
+        <class name="gui.tests.Nodes.node_add_use_current_cred_win" ></class>  
+    </classes>
+</test>
+
+<test name="node_add_unknown_target_type">
+    <classes>
+        <class name="gui.tests.Nodes.node_add_unknown_target_type" ></class>  
+    </classes>
+</test>
+
+<test name="node_add_duplicate_entry">
+    <classes>
+        <class name="gui.tests.Nodes.node_add_duplicate_entry" ></class>  
+    </classes>
+</test>
+
+
+<test name="node_add_windows_without_baseline">
+    <classes>
+        <class name="gui.tests.Nodes.node_add_windows_without_baseline"></class>  
+    </classes>
+</test>
+
+<test name="node_inventory_abort_cancel_ok">
+    <classes>
+        <class name="gui.tests.Nodes.node_inventory_abort_cancel_ok"></class>  
+    </classes>
+</test>
+
+<test name="node_delete_OK_cancel">
+    <classes>
+        <class name="gui.tests.Nodes.node_delete_OK_cancel"></class>  
+    </classes>
+</test>
+
+
+<!--<test name="TEMPLATE TEST n SMALL NAME">
+    <classes>
+        <class name="gui.tests.Nodes.template_test_n" ></class>  
+    </classes>
+</test>
+-->
+
+
+
+</suite>

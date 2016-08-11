@@ -1,0 +1,145 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NodesDeploy">
+
+<test name="dn_installation_option_upgrade_firmware">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_upgrade_firmware" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_rewrite_firmware">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_rewrite_firmware" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_upgrade_software">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_upgrade_software" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_rewrite_software">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_rewrite_software" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_downgrade_software">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_software" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_downgrade_firmware">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_firmware" ></class>  
+    </classes>
+</test>
+<test name="dn_advanced_mode_upgrade_both">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_advanced_mode_upgrade_both" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_rewrite_both">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_rewrite_both" ></class>  
+    </classes>	
+</test>
+<test name="dn_installation_option_downgrade_both">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_both" ></class>  
+    </classes>	
+</test>
+<test name="dn_advanced_mode_upgrade_both1">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_advanced_mode_upgrade_both1" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_downgrade_rewrite_software">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_rewrite_software" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_downgrade_rewrite_firmware">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_rewrite_firmware" ></class>  
+    </classes> 
+</test>
+<test name="dn_advanced_mode_upgrade_both2">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_advanced_mode_upgrade_both2" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_downgrade_rewrite_both">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_rewrite_both" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_upgrade_firmware_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_upgrade_firmware_lin" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_rewrite_firmware_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_rewrite_firmware_lin" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_upgrade_software_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_upgrade_software_lin" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_rewrite_software_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_rewrite_software_lin" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_downgrade_software_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_software_lin" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_downgrade_firmware_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_firmware_lin" ></class>  
+    </classes>
+</test>
+<test name="dn_advanced_mode_upgrade_both_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_advanced_mode_upgrade_both_lin" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_rewrite_both_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_rewrite_both_lin" ></class>  
+    </classes>	
+</test>
+<test name="dn_installation_option_downgrade_both_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_both_lin" ></class>  
+    </classes>	
+</test>
+<test name="dn_advanced_mode_upgrade_both1_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_advanced_mode_upgrade_both1_lin" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_downgrade_rewrite_software_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_rewrite_software_lin" ></class>  
+    </classes>
+</test>
+<test name="dn_installation_option_downgrade_rewrite_firmware_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_rewrite_firmware_lin" ></class>  
+    </classes> 
+</test>
+<test name="dn_advanced_mode_upgrade_both2_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_advanced_mode_upgrade_both2_lin" ></class>  
+    </classes>
+</test>
+
+<test name="dn_installation_option_downgrade_rewrite_both_lin">
+    <classes>
+        <class name="gui.tests.NodesDeploy.dn_installation_option_downgrade_rewrite_both_lin" ></class>  
+    </classes>
+</test>
+</suite>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="291774" started-at="2014-05-23T11:34:03Z" finished-at="2014-05-23T11:38:55Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="291774" started-at="2014-05-23T11:34:03Z" finished-at="2014-05-23T11:38:55Z">
+      <class name="gui.tests.MAT.RemoteDeployToLin">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:gui.tests.MAT.RemoteDeployToLin@369217ed]" name="checkSuiteSkip" is-config="true" duration-ms="79" started-at="2014-05-23T17:04:03Z" finished-at="2014-05-23T17:04:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSuiteSkip -->
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:gui.tests.MAT.RemoteDeployToLin@369217ed]" name="checkTestSkip" is-config="true" duration-ms="1" started-at="2014-05-23T17:04:03Z" finished-at="2014-05-23T17:04:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestSkip -->
+        <test-method status="PASS" signature="test_RemoteDeployToLin(java.lang.String)[pri:0, instance:gui.tests.MAT.RemoteDeployToLin@369217ed]" name="test_RemoteDeployToLin" duration-ms="289177" started-at="2014-05-23T17:04:03Z" data-provider="getTestData" finished-at="2014-05-23T17:08:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_RemoteDeployToLin -->
+        <test-method status="PASS" signature="testParamSetup()[pri:0, instance:gui.tests.MAT.RemoteDeployToLin@369217ed]" name="testParamSetup" is-config="true" duration-ms="0" started-at="2014-05-23T17:04:03Z" finished-at="2014-05-23T17:04:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParamSetup -->
+        <test-method status="PASS" signature="testParamCleanup()[pri:0, instance:gui.tests.MAT.RemoteDeployToLin@369217ed]" name="testParamCleanup" is-config="true" duration-ms="2392" started-at="2014-05-23T17:08:52Z" finished-at="2014-05-23T17:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParamCleanup -->
+        <test-method status="PASS" signature="testCleanup()[pri:0, instance:gui.tests.MAT.RemoteDeployToLin@369217ed]" name="testCleanup" is-config="true" duration-ms="173" started-at="2014-05-23T17:08:54Z" finished-at="2014-05-23T17:08:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCleanup -->
+        <test-method status="PASS" signature="suiteCleanup()[pri:0, instance:gui.tests.MAT.RemoteDeployToLin@369217ed]" name="suiteCleanup" is-config="true" duration-ms="0" started-at="2014-05-23T17:08:55Z" finished-at="2014-05-23T17:08:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteCleanup -->
+      </class> <!-- gui.tests.MAT.RemoteDeployToLin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

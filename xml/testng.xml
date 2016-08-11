@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="HPSUM GUI">
+
+<listeners>
+	<listener class-name="gui.common.listner.TestsListenerAdapter" />
+</listeners>
+
+<suite-files>
+	
+	<suite-file path ="./MAT.xml" />
+	<suite-file path ="./NodesDeploy.xml" />
+	<suite-file path ="./Switch.xml" />	
+	<suite-file path ="./VMHosts.xml" />
+	<suite-file path ="./Nodes.xml" />
+	<suite-file path ="./LoginAndLogout.xml" />
+	<suite-file path ="./Baseline.xml" />	
+	<suite-file path ="./GuidedUpdate.xml" />
+	<suite-file path ="./IPv6.xml" />
+	<suite-file path ="./Enclosure_VC.xml" />	
+	
+</suite-files>
+
+
+</suite>
